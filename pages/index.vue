@@ -1,7 +1,7 @@
 <template>
     <div class="counter__home">
         <div class="counter">
-            <div class="article-thumb">
+            <div class="counter__thumb">
                 <Counter                                             
                     :year="2023"
                     :month="10"
@@ -29,7 +29,7 @@
     display: grid;
     place-items: center;
 }
-.article-thumb{
+.counter__thumb{
     display: flex;
 }
 </style>
