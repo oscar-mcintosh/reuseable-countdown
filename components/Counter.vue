@@ -106,13 +106,18 @@ h5{
 
 .date{
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin: 10px 0;
+}
+
+.date span{
+  font-size: 1.4rem;
 }
 
 .days .hours .minutes .seconds{
     position: relative;
     text-align: center;
+    font-size: 1.4rem;
 }
 
 .days{
