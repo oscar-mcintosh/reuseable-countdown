@@ -1,23 +1,23 @@
 <template>
     <div class="counter__home">
         <CountDown />
-    <div>
-                    <h1>Pre selected</h1>
+        <div>
+            <h1>Hard Coded Dates</h1>
 
-        <div class="counter">
-            <div class="counter__thumb">
-                <Counter                                             
-                    :year="2023"
-                    :month="10"
-                    :date="30"
-                    :hour="23"
-                    :minute="23"
-                    :second="22"
-                    :millisecond="22"
-                />
+            <div class="counter">
+                <div class="counter__thumb">
+                    <Counter                                             
+                        :year="2023"
+                        :month="10"
+                        :date="30"
+                        :hour="23"
+                        :minute="23"
+                        :second="22"
+                        :millisecond="22"
+                    />
+                </div>
             </div>
         </div>
-    </div>
     </div>
 
 </template>

@@ -1,9 +1,5 @@
 <template>
   <div class="countdown__text-wrap bordered">
-    <!-- <div class="rows jc-center">
-      <h5 class="small-title" v-if="!expired">Register for the next tournament</h5>
-      <h5 class="small-title" v-else>Registration for this tournament has ended</h5>
-    </div> -->
     <div v-if="loaded" class="rows">
       <div class="date">
           <span class="days">

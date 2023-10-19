@@ -9,9 +9,9 @@
         v-model="selectedDateTime"
         @input="handleDateTimeInput"
       />
-      <p>Date and Time You Selected : {{ formattedSelectedDateTime }}</p>
+      <p v-if="selectedDateTime">Date and Time You Selected : {{ formattedSelectedDateTime }}</p>
 
-      <Counter
+      <Counter v-if="selectedDateTime"
         :year="selectedYear"
         :month="selectedMonth"
         :date="selectedDate"
