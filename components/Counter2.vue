@@ -1,32 +1,32 @@
 <template>
-  <div class="countdown__text-wrap bordered">
-    <!-- <div class="rows jc-center">
+  <div class="counter countdown__text-wrap bordered">
+    <div class="rows jc-center">
       <h5 class="small-title" v-if="!expired">Register for the next tournament</h5>
       <h5 class="small-title" v-else>Registration for this tournament has ended</h5>
-    </div> -->
-    <div v-if="loaded" class="rows">
-      <div class="date">
+    </div>
+    <div v-if="loaded" class="rows jc-center ai-center">
+      <div>
           <span class="days">
           {{ displayDays }}
           </span>
           <div class="label countdown__text-info">days</div>
         </div>
       <span class="leading-snug">:</span>
-      <div class="date">
+      <div>
           <span class="hours">
           {{ displayHours }}
           </span>
           <div class="label countdown__text-info">hours</div>
         </div>
       <span class="leading-snug">:</span>
-      <div class="date">
+      <div>
           <span class="minutes">
           {{ displayMinutes }}
           </span>
           <div class="label countdown__text-info">minutes</div>
         </div>
       <span class="leading-snug">:</span>
-      <div class="date">
+      <div>
           <span class="seconds">
               {{ displaySeconds }}
           </span>
@@ -94,6 +94,7 @@ const showRemaining = () => {
 onMounted(showRemaining);
 </script>
 
+
 <style lang="css" scoped>
 
 section{
@@ -104,15 +105,8 @@ h5{
     margin-bottom: 3rem;
 }
 
-.date{
-  text-align: center;
-  font-size: 1.2rem;
-  margin: 10px 0;
-}
-
 .days .hours .minutes .seconds{
     position: relative;
-    text-align: center;
 }
 
 .days{
@@ -136,7 +130,10 @@ h5{
      display: flex;
  }
 
+.counter{
+    margin-top: 3rem;
+}
  .leading-snug{
-     margin: 1rem ;
+     margin: 0 1rem;
  }
 </style>

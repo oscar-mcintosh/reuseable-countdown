@@ -1,5 +1,9 @@
 <template>
     <div class="counter__home">
+        <CountDown />
+    <div>
+                    <h1>Pre selected</h1>
+
         <div class="counter">
             <div class="counter__thumb">
                 <Counter                                             
@@ -14,6 +18,7 @@
             </div>
         </div>
     </div>
+    </div>
 
 </template>
 
@@ -22,14 +27,35 @@
 
 </script>
 
-<style>
+<style >
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  .counter{
+  border: 1px solid #dedede;
+  background-color: rgba(255, 255, 255, .5);
+  backdrop-filter: blur(10px);
+
+  padding: 20px;
+}
+
+
 .counter__home{
     width: 100%;
     height: 100vh;
     display: grid;
+    gap: 20px;
     place-items: center;
+    background: black;
+    color:aliceblue;
 }
+
 .counter__thumb{
     display: flex;
+    padding: 20px 0;
 }
 </style>
