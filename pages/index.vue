@@ -36,26 +36,25 @@
   }
 
   .counter{
-  border: 1px solid #dedede;
-  background-color: rgba(255, 255, 255, .5);
-  backdrop-filter: blur(10px);
+    border: 1px solid #dedede;
+    background-color: rgba(255, 255, 255, .5);
+    backdrop-filter: blur(10px);
+    width: 700px;
+    padding: 20px;
+  }
 
-  padding: 20px;
-}
+    .counter__home{
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        gap: 20px;
+        place-items: center;
+        background: black;
+        color:aliceblue;
+    }
 
-
-.counter__home{
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    gap: 20px;
-    place-items: center;
-    background: black;
-    color:aliceblue;
-}
-
-.counter__thumb{
-    display: flex;
-    padding: 20px 0;
-}
+    .counter__thumb{
+        display: flex;
+        padding: 20px 0;
+    }
 </style>

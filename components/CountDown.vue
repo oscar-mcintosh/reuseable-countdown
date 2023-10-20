@@ -81,7 +81,7 @@ watch(selectedDateTime, () => {
   border: 1px solid #dedede;
   background-color: rgba(255, 255, 255, .5);
   backdrop-filter: blur(10px);
-
+  width: 700px;
   padding: 20px;
 }
 
