@@ -1,32 +1,33 @@
 <template>
   <div class="countdown__text-wrap bordered">
-    <div v-if="loaded" class="rows">
+    <p class="hard-coded">{{month}}-{{date}}-{{year}}</p>
+    <div v-if="loaded" class="row">
       <div class="date">
           <span class="days">
           {{ displayDays }}
           </span>
-          <div class="label countdown__text-info">days</div>
+          <div class="label countdown__text-info">D</div>
         </div>
       <span class="leading-snug">:</span>
       <div class="date">
           <span class="hours">
           {{ displayHours }}
           </span>
-          <div class="label countdown__text-info">hours</div>
+          <div class="label countdown__text-info">H</div>
         </div>
       <span class="leading-snug">:</span>
       <div class="date">
           <span class="minutes">
           {{ displayMinutes }}
           </span>
-          <div class="label countdown__text-info">minutes</div>
+          <div class="label countdown__text-info">M</div>
         </div>
       <span class="leading-snug">:</span>
       <div class="date">
           <span class="seconds">
               {{ displaySeconds }}
           </span>
-          <div class="label countdown__text-info">seconds</div>
+          <div class="label countdown__text-info">S</div>
         </div>
     </div>
   </div>
@@ -96,6 +97,16 @@ section{
     align-content: center;
 }
 
+.row{
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
 h5{
     margin-bottom: 3rem;
 }
@@ -104,6 +115,10 @@ h5{
   text-align: center;
   font-size: 1.3rem;
   margin: 10px 0;
+  border: 1px solid #087e8b;
+  position: relative;
+  padding: 1rem;
+  border-radius: 5px;
 }
 
 .date span{
@@ -114,6 +129,7 @@ h5{
     position: relative;
     text-align: center;
     font-size: 1.4rem;
+    color: blue;
 }
 
 .days{
@@ -125,19 +141,29 @@ h5{
     text-align: center;
 }
 .label{
-    color: red;
+    color: #c81d25;
     letter-spacing: .5px;
     padding: 1rem 0;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 1.4rem;
-    /* position: absolute; */
+    font-size: .713rem;
+    position: absolute;
+    top: -1.1rem;
+    left: 2px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 1);
 }
  .rows{
      display: flex;
  }
 
  .leading-snug{
-     margin: 1rem ;
+     margin: auto;
+ }
+
+ .hard-coded{
+   margin-bottom: 30px;
+   color: #c81d25;
+   font-weight: 500;
  }
 </style>

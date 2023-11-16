@@ -2,14 +2,14 @@
   <div>
     <h1>Dynamic Counter</h1>
     <div class="counter">
-      <h1>Select a Date and Time</h1>
+      <h2>Select a Date and Time</h2>
       <input
         type="datetime-local"
         id="selectedDateTime"
         v-model="selectedDateTime"
         @input="handleDateTimeInput"
       />
-      <p v-if="selectedDateTime">Date and Time You Selected : {{ formattedSelectedDateTime }}</p>
+      <p class="input" v-if="selectedDateTime">You Selected : {{ formattedSelectedDateTime }}</p>
 
       <Counter v-if="selectedDateTime"
         :year="selectedYear"
@@ -77,11 +77,13 @@ watch(selectedDateTime, () => {
 </script>
 
 <style scoped>
+h1{
+  color: #c81d25;
+}
 .counter{
-  border: 1px solid #dedede;
   background-color: rgba(255, 255, 255, .5);
   backdrop-filter: blur(10px);
-  width: 700px;
+  width: 100%;
   padding: 20px;
 }
 
@@ -90,14 +92,16 @@ input{
   margin: 15px 0;
 }
 
-.counter h1{
-  color: blue;
+.counter h2{
+  color: #087e8b;
+  font-size: 1.5rem;
 }
 
 .counter p{
   font-size: 1.2rem;
   font-weight: 500;
-    margin-bottom: 15px;
+    margin: 15px 0 30px;
     letter-spacing: 1px;
+    color: #0b3954;
 }
 </style>
