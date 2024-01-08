@@ -12,7 +12,7 @@
                 <div class="counter">
                     <Counter                                             
                         :year="2024"
-                        :month="22"
+                        :month="2"
                         :date="22"
                         :hour="23"
                         :minute="23"
@@ -25,8 +25,8 @@
                     <h2>Hard Coded Dates</h2>
                     <div class="counter">
                         <Counter                                             
-                            :year="2023"
-                            :month="12"
+                            :year="2024"
+                            :month="2"
                             :date="21"
                             :hour="23"
                             :minute="23"
@@ -39,8 +39,8 @@
                 <h2>Hard Coded Dates</h2>
                 <div class="counter">
                     <Counter                                             
-                        :year="2023"
-                        :month="12"
+                        :year="2024"
+                        :month="2"
                         :date="10"
                         :hour="23"
                         :minute="23"
