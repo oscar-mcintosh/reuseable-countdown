@@ -6,6 +6,7 @@
       <input
         type="datetime-local"
         id="selectedDateTime"
+        data-count="time"
         v-model="selectedDateTime"
         @input="handleDateTimeInput"
       />
